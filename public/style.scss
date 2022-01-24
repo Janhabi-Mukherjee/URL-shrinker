@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  box-sizing: border-box;  
+ 
+}
+body{
+  background-image: linear-gradient(to bottom right, black, #f3e5f5);
+}
+h1{
+  margin: 20px;
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 10px;
+  font-size: 50px;
+  color: white;
+}
+p{
+  /*border: 2px solid red;*/
+  background-image: linear-gradient(to left, #560027, #000000b5);
+  font-size: 25px;
+  height: 150px;
+  width: 50%;
+  margin-left: 25%;
+  padding: 15px;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: 'Dancing Script', cursive;
+  color:#bda2a2;
+}
+h4{
+  margin: 40px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  font-family: 'Abril Fatface', cursive;
+}
+form{
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  label{
+    letter-spacing: 2px;
+  }
+  input{
+    height: 40px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #e1bee7;
+  }
+  button{
+    height: 40px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: 3px 2px 7px 0px #680819;
+    border:none;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+  }
+  button:hover{
+      background-color:black ;
+      color:whitesmoke;
+  }
+}
+table{
+  /*border: 2px solid red;*/
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+  left: 15%;
+  width: 70%;
+  border-spacing: 0 8px;
+  tr:nth-child(even)
+  {
+    background-color: #ac748d;
+  }
+  tr:nth-child(odd)
+  {
+    background-color: #ebbaff;
+  }
+  .thead{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    color:white;
+    font-family: 'Abril Fatface', cursive;
+    tr{
+      background-color: #1d000d;
+    }
+  }
+  tr{
+    margin: 10px;
+    border: 2px solid #3f3030;
+    height: 40px;
+    box-shadow: 2px 2px 4px 0px #7c4b04;
+    /*background-color: #c43c00;*/
+  }
+  tbody{
+    font-size: 20px;
+    tr{
+      color: #470202;
+    }
+  }
+  .col-1{
+    width:40%;
+    padding: 10px;
+  }
+  .col-2{
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+  }
+  .col-3{
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+  }
+  td{
+    font-family: 'Dancing Script', cursive;
+    a{
+      color: #470202;
+      font-family: 'Dancing Script', cursive;
+      text-decoration: none;
+    }
+    a:hover{
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}

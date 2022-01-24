@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+	<title>Document</title>
+</head>
+<body>
+    <body>
+		<div class="container">
+			<h1>SHORTENER</h1>
+			<p>Fed up of working with long URLs?? Shortener is here to help you out with lengthy and messy URLS. Now you can shrink it with one click and use it whenever you want.</p>
+			<h4>Put your link below</h4>
+			<form action="/short" method="POST">
+				<label for="fullUrl" >URL</label>
+				<input required placeholder="URL" type="url" name="fullUrl" id="fullUrl">
+				<button type="submit">Shrink This!</button>
+            </form>
+
+			<table>
+				<thead class="thead">
+					<tr>
+						<th class="col-1">Full URL</th>
+						<th class="col-2">Short URL</th>
+						<th class="col-3">Clicks</th>
+					</tr>
+				</thead>
+                
+				<tbody>
+					<% shortUrls.forEach(shortUrl => { %>
+                        <tr>
+                            <td class="col-1"><a href="<%= shortUrl.full %>"><%= shortUrl.full %></a></td>
+                            <td class="col-2"><a href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+                            <td class="col-3"><%= shortUrl.clicks %></td>
+                        </tr>
+                    <% }) %>
+				</tbody>
+
+            </table>
+        </div>
+	</body>
+</html>
