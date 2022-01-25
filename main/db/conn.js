@@ -1,6 +1,8 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/shortner',{
+const mongoPath='mongodb+srv://janhabi_2000:sbQMF7WMoWrTlG8w@cluster0.fbjea.mongodb.net/shortener?retryWrites=true&w=majority'
+
+mongoose.connect(mongoPath,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 });
@@ -9,7 +11,7 @@ db.on('error',console.error.bind(console,'connection err'));
 db.once('open',()=>{
     console.log("connection is successfull");  
 });
-/*
+/*sbQMF7WMoWrTlG8w
 async()=>{
     try{
         mongoose.connect('mongodb://127.0.0.1:27017/shortner', {
